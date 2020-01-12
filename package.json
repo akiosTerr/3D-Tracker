@@ -1,0 +1,30 @@
+{
+  "name": "mapbox-app",
+  "version": "1.0.0",
+  "description": "maps tracker",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js",
+    "bb": "watchify public/js/app.js -t babelify -o public/js/bundle.js -v"
+  },
+  "keywords": [
+    "mapbox",
+    "tracker"
+  ],
+  "author": "akiosTerr",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mapbox-gl": "^1.6.1",
+    "open": "^7.0.0",
+    "uniq": "^1.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.0",
+    "@babel/node": "^7.8.0",
+    "@babel/preset-env": "^7.8.0",
+    "babelify": "^10.0.0",
+    "browserify": "^16.5.0",
+    "watchify": "^3.11.1"
+  }
+}
