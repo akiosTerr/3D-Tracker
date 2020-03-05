@@ -20,6 +20,20 @@ h1 {
   text-align: center;
 }
 
+button {
+  position: absolute;
+  right:25px;
+  margin: 20px;
+  }
+   
+  #pause::after {
+  content: 'Pause';
+  }
+   
+  #pause.pause::after {
+  content: 'Play';
+  }
+
 /* #map {
   width: 800px;
   height: 300px;
